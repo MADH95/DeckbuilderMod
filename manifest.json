@@ -1,0 +1,8 @@
+{
+	"name": "DeckbuilderMod",
+	"version_number": "1.0.0",
+	"website_url": "",
+	"description": "DeckbuilderMod lets you add any number of cards to your starting deck!",
+	"dependencies": [
+	]
+}
