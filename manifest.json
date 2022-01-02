@@ -1,8 +1,9 @@
 {
 	"name": "DeckbuilderMod",
-	"version_number": "1.0.0",
+	"version_number": "1.1.0",
 	"website_url": "",
-	"description": "DeckbuilderMod lets you add any number of cards to your starting deck!",
+	"description": "DeckBuilderMod lets you add any number of cards to your starting deck!",
 	"dependencies": [
+		"BepInEx-BepInExPack_Inscryption-5.4.1701"
 	]
 }
