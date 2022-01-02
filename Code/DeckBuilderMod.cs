@@ -45,8 +45,8 @@ namespace TestDeckMod
             bool enableTestDeck = GetTestDeck();
             bool doClearDeck = DoClearDeckBeforeAddingCards();
             
-            TestDeckPatch.canLoadDeck = enableTestDeck;
-            TestDeckPatch.doClearDeck = doClearDeck; 
+            DeckBuilderPatch.canLoadDeck = enableTestDeck;
+            DeckBuilderPatch.doClearDeck = doClearDeck; 
             
             int numCards = GetNumCards();
 
@@ -63,12 +63,12 @@ namespace TestDeckMod
                     if (!CheckThatCardExists(nameOfCardIter))
                     {
                         Logger.LogError( $"Can't find card with name \"{ nameOfCardIter }\" to add to deck" );
-                        TestDeckPatch.canLoadDeck = false;
+                        DeckBuilderPatch.canLoadDeck = false;
                         continue;
                     }
                     
                     Logger.LogMessage( $"\"{ nameOfCardIter }\" added to deck" );
-                    TestDeckPatch.cardsToLoad.Add( nameOfCardIter );
+                    DeckBuilderPatch.cardsToLoad.Add( nameOfCardIter );
                 }
             }
             else
