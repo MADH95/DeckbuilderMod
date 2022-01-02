@@ -18,7 +18,7 @@ namespace TestDeckMod
         internal static ManualLogSource Log;
 
         public bool GetTestDeck() 
-            => Config.Bind( PluginName, "TestDeck", false, new ConfigDescription( "Load starter deck with specified cards" ) ).Value;
+            => Config.Bind( PluginName, "Enable DeckBuilder", false, new ConfigDescription( "Load starter deck with specified cards" ) ).Value;
         
         public bool DoClearDeckBeforeAddingCards() 
             => Config.Bind( PluginName, "Clear deck before adding cards?", false, new ConfigDescription( "Clear your deck before adding cards so that only the cards in the config will be there" ) ).Value;
