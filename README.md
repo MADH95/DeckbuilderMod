@@ -3,25 +3,35 @@
 
 Once installed, run the game once, you should get a file in your BepInEx/config folder called MADH.inscryption.DeckbuilderMod.cfg, this is what you need to edit to add cards to your starting hand.
 
-Simply enable test deck by setting
+## Enabling Options
+
+### Enabling the DeckBuilder
+
+- `Enable DeckBuilder = false` to `Enable DeckBuilder = true`
+
+### Clear deck before adding cards?
+
+- Change `Clear deck before adding cards?` option from `false` to `true` so that only the cards you want to use are there.
+
+### Number of Cards
+
+- Change the `Number of Cards` option to the number of cards you want in your starting deck:
 
 ```
-## Load starter deck with specified cards
-# Setting type: Boolean
-# Default value: false
-Enable Deckbuilder = false
-```
-to
-```
-## Load starter deck with specified cards
-# Setting type: Boolean
-# Default value: false
-Enable Deckbuilder = true
-```
+# Setting type: Int32
+# Default value: 4
+Number of Cards = 4
 
-Next you can change the Number of Cards field to the number of cards you want in your starting deck.
+# Setting type: String
+# Default value: Opossum
+Card1 = Geck
 
-Finally, you rename the name after the equals following "Card1". You can copy the assignment to card one below it to add the rest of your cards, simply increase the number by 1 as you add cards.
+Card2 = Geck
+
+Card3 = PackRat
+
+Card4 = PackRat
+```
 
 ___
 
@@ -41,4 +51,4 @@ to
 \# Default value: false
 Enabled = true
 ```
-in **Inscryption/BepInEx/Config/BepInEx.cfg**
+in `Inscryption/BepInEx/Config/BepInEx.cfg`
